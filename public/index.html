@@ -32,18 +32,21 @@
  
 <div class="buttons container">
     <fieldset>
+        <legend>Listar usuarios</legend>
         <form onsubmit="getUsers();return false;" id="list">
             <input type = "submit" value="get all users" >
         </form>
     </fieldset>
 
     <fieldset>
+        <legend>Get usuario</legend>
         <form onsubmit="getById();return false;" id="get_by_id">
             <input type="text" required name="get_u_id" placeholder="user id">
             <input type = "submit" value="get user by id">
         </form>
     </fieldset>
     <fieldset>
+        <legend>Crear usuario</legend>
         <form onsubmit="addUser();return false;" id="add">
             <input type="text" required name="name" placeholder="Nombre">
             <input type="text" required name="apellido" placeholder="Apellido">
@@ -54,6 +57,7 @@
         </form>
     </fieldset>
     <fieldset>
+        <legend>Editar usuario</legend>
         <form onsubmit="editUser();return false;" id="edit">            
             <input type="text" required name="_id" placeholder="user id">
             <input type="text" required name="name" placeholder="Nombre">
@@ -65,6 +69,7 @@
         </form>
     </fieldset>
     <fieldset>
+        <legend>Login</legend>
         <form onsubmit="loginUser();return false;" id="login">            
             <input type="email" required name="email" placeholder="Email">
             <input type="text" required name="password" placeholder="Password">
@@ -72,12 +77,14 @@
         </form>
     </fieldset>
     <fieldset>
-        <form onsubmit="logoutUser();return false;" id="logout">            
+        <legend>Logout</legend>
+        <form onsubmit="logoutUser();return false;" id="logout"            
             <input type="email" required name="logout_email" placeholder="Email">
             <input type = "submit" value="logout user" >
         </form>
     </fieldset>
     <fieldset>
+        <legend>Eliminar usuario</legend>
         <form onsubmit="deleteUser();return false;" id="delete">   
             <input type="text" required name="_id" placeholder="user id">
             <input type = "submit" value="delete user" >
