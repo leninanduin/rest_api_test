@@ -23,7 +23,7 @@ node server.js
 
 Dentro de la carpeta con los archivos del repo
 ```
-sudo /etc/init.dmongod start
+sudo /etc/init.d/mongod start
 ```
 
 ### Consola de pruebas
